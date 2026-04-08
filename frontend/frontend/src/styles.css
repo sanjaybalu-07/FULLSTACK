@@ -1,0 +1,187 @@
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  width: 450px;                 /* same as container */
+  margin: 20px auto;            /* center horizontally */
+  
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ================= LOGOUT BUTTON ================= */
+
+.logout-btn {
+  background: #ff5252;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
+
+/* ================= MAIN BOX ================= */
+
+.container {
+  width: 450px;
+  margin: 30px auto;
+  /* center horizontally only */
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+
+  border: 2px solid #1976d2;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  max-height: none;
+  /* 🔥 IMPORTANT */
+  overflow: visible;
+  /* 🔥 IMPORTANT */
+}
+
+/* ================= HEADINGS ================= */
+
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ================= INPUTS ================= */
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+/* ================= BUTTON ================= */
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 5px solid #1976d2;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= STATUS ================= */
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.status.NEW {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.IN\ PROGRESS {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status.FIXED {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.CLOSED {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* ================= LIST SPACING ================= */
+
+.container div {
+  margin-top: 10px;
+}
+
+.container {
+  scrollbar-width: thin;
+}
+
+/* ================= HR ================= */
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
